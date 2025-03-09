@@ -1,7 +1,7 @@
 
 import {type ValidationRule} from './validateurTypes'
 
-export const useUseValidations = () => {
+export const useValidations = () => {
   const validationRules: ValidationRule = reactive({
     'required': (value: unknown) => {
       return{

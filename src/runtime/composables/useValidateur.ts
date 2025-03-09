@@ -1,7 +1,7 @@
 
-export const useUseValidateur = () => {
+export const useValidateur = () => {
   
-  const {validationRules} = useUseValidations();
+  const {validationRules} = useValidations();
 
   const formToValidate = ref<HTMLFormElement | null>(null)
   let formSchema: FormSchema | object = reactive({})

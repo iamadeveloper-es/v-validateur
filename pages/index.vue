@@ -1,6 +1,7 @@
 <script lang="ts" setup>
+// import { useValidateur } from '~/src/runtime/composables/useValidateur.ts' 
 const formOne = ref<HTMLFormElement | null>(null)
-const {initValidator, validate, validationErrors} = useUseValidateur()
+const {initValidator, validate, validationErrors} = useValidateur()
 
 const formSchema = reactive({
     'userName': {
