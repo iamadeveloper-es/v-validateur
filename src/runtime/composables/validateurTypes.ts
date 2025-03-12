@@ -15,7 +15,7 @@ export type FormSchema = {
     [key: string]: Rule
 }
 
-type ValidationResult = {
+export type ValidationResult = {
     isValid: boolean;
     message: string;
 };
