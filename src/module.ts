@@ -1,4 +1,4 @@
-import { defineNuxtModule, createResolver, addImportsDir } from '@nuxt/kit'
+import { defineNuxtModule, createResolver, addImportsDir } from '@nuxt/kit';
 
 export default defineNuxtModule({
   meta: {
@@ -6,13 +6,12 @@ export default defineNuxtModule({
     configKey: 'vValidateur'
   },
 
-  setup(options, nuxt) {
-    const resolver = createResolver(import.meta.url)
+  setup (options) {
+    createResolver(import.meta.url);
 
-    // Registrar automáticamente todos los composables del módulo
-    // addImportsDir(resolver.resolve('runtime/composables'))
-    addImportsDir('./src/runtime/composables')
+    addImportsDir('./src/runtime/composables');
 
-    console.log('✅ Módulo v-validateur cargado!', options)
+    // eslint-disable-next-line no-console
+    console.log('✅ Módulo v-validateur cargado!', options);
   }
-})
+});

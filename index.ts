@@ -1,1 +1,1 @@
-export { default } from './src/module'
+export { default } from './src/module';
